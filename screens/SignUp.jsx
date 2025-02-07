@@ -4,14 +4,8 @@ import { Button, Subheading, TextInput } from 'react-native-paper';
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { useNavigation } from '@react-navigation/native';
 import { initializeApp } from "firebase/app";
-const firebaseConfig = {
-  apiKey: "AIzaSyAYayY3LC6LeO6vYASb9z02l4kqVqUMnPY",
-  authDomain: "chatty-e60b1.firebaseapp.com",
-  projectId: "chatty-e60b1",
-  storageBucket: "chatty-e60b1.firebasestorage.app",
-  messagingSenderId: "725668493165",
-  appId: "1:725668493165:web:4296276fc8cc7333760c64"
-};
+import { firebaseConfig } from '../firebaseConfig';
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
